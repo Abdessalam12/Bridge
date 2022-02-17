@@ -1,5 +1,7 @@
 import React from 'react';
-import '../css/index.css'
+import '../css/index.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Acceuil(props) {
  
   return (
