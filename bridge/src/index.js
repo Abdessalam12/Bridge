@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Acceuil from './components/Acceuil';
-import Test   from './components/Test'
+import Menu  from './components/Menu'
 
 ReactDOM.render(
     <div>
-       <Test/>
+       <Menu/>
        
     </div>
    

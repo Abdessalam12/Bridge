@@ -6,3 +6,10 @@
     color: red !important;
   
 }
+.menu1 {
+    display:none !important;
+}
+.menu2 {
+    display:inline !important;
+    color: red !important;
+}
