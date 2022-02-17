@@ -6,8 +6,8 @@ import Test   from './components/Test'
 
 ReactDOM.render(
     <div>
-       <Acceuil name="test" />
        <Test/>
+       
     </div>
    
   ,

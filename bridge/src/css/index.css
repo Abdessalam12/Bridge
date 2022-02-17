@@ -1,6 +1,8 @@
 .lmj-banner {
-    color: red;
-    text-align: right;
-    padding: 32px;
-    border-bottom: solid 3px black;
+    background-color: #be7bc4;
+}
+
+.test {
+    color: red !important;
+  
 }
