@@ -1,15 +1,25 @@
-.lmj-banner {
-    background-color: #be7bc4;
+.colnav {
+  background-color: #9ff1f1;
 }
 
-.test {
-    color: red !important;
-  
+.textnav {
+  font-weight: bold !important;
+  color: #000000 !important;
 }
-.menu1 {
-    display:none !important;
+.divform {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  top: 85px;
+  left: 25px;
+  border: 2px solid #9ff1f1 !important;
+  border-radius: 50px;
 }
-.menu2 {
-    display:inline !important;
-    color: red !important;
+
+.form {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  top: 60px;
+  left: 25px;
 }

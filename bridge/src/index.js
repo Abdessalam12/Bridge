@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Acceuil from './components/Acceuil';
-import Menu  from './components/Menu'
+import Authentification  from './components/Authentification';
+
 
 ReactDOM.render(
     <div>
-       <Menu/>
+       <Authentification/>
        
     </div>
    
