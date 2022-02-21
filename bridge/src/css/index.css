@@ -3,7 +3,7 @@
 }
 
 .textnav {
-  font-weight: bold !important;
+  font-weight: italic bold !important;
   color: #000000 !important;
 }
 .divform {
@@ -22,4 +22,29 @@
   height: 300px;
   top: 60px;
   left: 25px;
+}
+
+.logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 100px;
+  top: 40px;
+  border: 2px solid #9ff1f1 !important;
+  border-radius: 50px;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+}
+.err {
+  width: 100%;
+  display: block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 4px;
+  outline: 0;
+  border: 1px solid;
+  border-color: rgb(255, 0, 0);
+  box-shadow: 0 0 0 0.25rem rgb(252, 165, 165);
 }
