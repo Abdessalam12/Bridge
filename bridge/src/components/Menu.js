@@ -1,9 +1,15 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "../css/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Button, Container } from "react-bootstrap";
 
-function Menu() {
+function Menu(props) {
+  const [signup, setSigup] = useState({ display: "inline" });
+  const [signin, setSigin] = useState({ display: "none" });
+  const fct = (val) => {
+    val ? setSigup({ display: "inline" }) : setSigin({ display: "block" });
+    props.onClick(val);
+  };
   return (
     <>
       <Navbar className="colnav">
@@ -14,9 +20,17 @@ function Menu() {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <div>
-              <Button variant="outline-dark">Sign in</Button>
+              <Button variant="outline-dark" onClick={fct(true)} style={signin}>
+                Sign in
+              </Button>
               &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-              <Button variant="outline-dark">Sign up</Button>
+              <Button
+                variant="outline-dark"
+                onClick={fct(false)}
+                style={signup}
+              >
+                Sign up
+              </Button>
             </div>
           </Navbar.Collapse>
         </Container>

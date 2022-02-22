@@ -1,14 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Authentification from "./components/Authentification";
-import Menu from "./components/Menu";
+import Afficher from "./components/Afficher";
 
-ReactDOM.render(
-  <div>
-    <Menu />
-    <Authentification />
-  </div>,
-
-  document.getElementById("root")
-);
+ReactDOM.render(<Afficher />, document.getElementById("root"));
