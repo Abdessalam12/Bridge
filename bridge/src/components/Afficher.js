@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Authentification from "./Authentification";
 import Menu from "./Menu";
 
-function Afficher() {
-  const [valid, setValid] = useState(true);
-  function test(value) {
-    setValid(value);
-  }
+function Afficher(props) {
+  const [valid, setValid] = useState(false);
+  const changeValid = (val) => {
+    setValid(val);
+  };
   return (
     <>
-      <Menu onClick={test} valid={valid} />
+      <Menu onClick={changeValid} />
       <Authentification valid={valid} />
     </>
   );

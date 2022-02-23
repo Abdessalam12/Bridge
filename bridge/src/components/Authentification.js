@@ -24,6 +24,7 @@ function Authentification(props) {
             <div className="divform"></div>
           </Col>
           <Col>
+            {console.log(props.valid)}
             {props.valid ? (
               <div className="divform">
                 {" "}

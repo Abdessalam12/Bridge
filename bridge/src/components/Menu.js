@@ -4,12 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Button, Container } from "react-bootstrap";
 
 function Menu(props) {
-  const [signup, setSigup] = useState({ display: "inline" });
-  const [signin, setSigin] = useState({ display: "none" });
-  const fct = (val) => {
-    val ? setSigup({ display: "inline" }) : setSigin({ display: "block" });
-    props.onClick(val);
-  };
+  const [despear, setDespear] = useState(true);
+  console.log(despear);
   return (
     <>
       <Navbar className="colnav">
@@ -20,17 +16,27 @@ function Menu(props) {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <div>
-              <Button variant="outline-dark" onClick={fct(true)} style={signin}>
-                Sign in
-              </Button>
-              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-              <Button
-                variant="outline-dark"
-                onClick={fct(false)}
-                style={signup}
-              >
-                Sign up
-              </Button>
+              {despear ? (
+                <Button
+                  variant="outline-dark"
+                  onClick={() => {
+                    setDespear(false);
+                    props.onClick(true);
+                  }}
+                >
+                  Sign in
+                </Button>
+              ) : (
+                <Button
+                  variant="outline-dark"
+                  onClick={() => {
+                    setDespear(true);
+                    props.onClick(false);
+                  }}
+                >
+                  Sign up
+                </Button>
+              )}
             </div>
           </Navbar.Collapse>
         </Container>
