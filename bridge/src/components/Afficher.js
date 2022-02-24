@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Authentification from "./Authentification";
 import Menu from "./Menu";
-
+import Newaccount from "./Newaccount";
 function Afficher(props) {
   const [valid, setValid] = useState(false);
   const changeValid = (val) => {
@@ -10,7 +10,7 @@ function Afficher(props) {
   return (
     <>
       <Menu onClick={changeValid} />
-      <Authentification valid={valid} />
+      {valid ? <Authentification /> : <Newaccount />}
     </>
   );
 }
